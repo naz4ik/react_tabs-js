@@ -18,7 +18,7 @@ export const App = () => {
       <h1 className="title">
         Selected tab is {tabs.find(tab => tab.id === activeTab)?.title}
       </h1>
-      <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <Tabs tabs={tabs} activeTabId={activeTab} onTabSelected={setActiveTab} />
     </div>
   );
 };
